@@ -1,0 +1,7 @@
+What is an array?
+
+* - An array in Java is a data structure that stores a fixed-size sequential collection of elements of the same type. 
+Arrays in Java are objects that can hold primitive types (like int, char, float) or reference types (like String, Object, 
+or custom classes).
+
+

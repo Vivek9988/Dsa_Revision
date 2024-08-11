@@ -1,0 +1,6 @@
+* - 1. Call by value(Function)- It means that the copy of the actual value will be passed in the paremeter. Changes in copied value 
+will not change the original.
+
+* - 2. Call by reference - It is oposite of call by value and doesnot supported in java.
+
+
