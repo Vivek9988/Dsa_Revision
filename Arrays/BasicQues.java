@@ -70,10 +70,21 @@ public class BasicQues {
 
     }
 
+    public static void pair(int numbres[]){
+        for (int i = 0 ; i <numbres.length;i++){
+            for (int j = i+1;j<numbres.length;j++){
+                System.out.print("("+numbres[i] +","+ numbres[j]+")");
+            }
+            System.out.println();
+
+        }
+    }
+
 
 
     public static void main(String args[]) {
-        int numbres[] = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 };
+        //int numbres[] = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 };
+        int numbres[]= {2,4,6,8,10};
         // int index = linearSearch(numbres, 9);
         // if (index==-1){
         //     System.out.println("not found ");
@@ -86,10 +97,12 @@ public class BasicQues {
         //System.out.println(getLargest(numbres));
 
         //System.out.println("The index id "+binSearch(numbres, 9));
-        reverse(numbres);
-        for(int i = 0; i<numbres.length;i++){
-            System.out.print(numbres[i]+ " ");
-        }
+        // reverse(numbres);
+        // for(int i = 0; i<numbres.length;i++){
+        //     System.out.print(numbres[i]+ " ");
+        // }
+
+        pair(numbres);
 
     }
 
