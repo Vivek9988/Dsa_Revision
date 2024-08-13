@@ -70,6 +70,8 @@ public class BasicQues {
 
     }
 
+    // pairs in java
+
     public static void pair(int numbres[]){
         for (int i = 0 ; i <numbres.length;i++){
             for (int j = i+1;j<numbres.length;j++){
@@ -79,6 +81,22 @@ public class BasicQues {
 
         }
     }
+
+    // Subarrays in java
+
+    public static void subArrays(int numbers[]){
+        for (int i = 0;i<numbers.length;i++){
+            for (int j =i;j<numbers.length;j++){
+                for (int k = i ;k<=j;k++ ){
+                    System.out.print(numbers[k]+" ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+
+     
 
 
 
@@ -102,7 +120,8 @@ public class BasicQues {
         //     System.out.print(numbres[i]+ " ");
         // }
 
-        pair(numbres);
+        //pair(numbres);
+        subArrays(numbres);
 
     }
 
