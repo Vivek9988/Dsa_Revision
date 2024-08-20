@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Basic {
 
-    //printing the string each character
+    //printing the String each character
 
     public static void printStr(String str){
         for (int i =0;i<str.length();i++){

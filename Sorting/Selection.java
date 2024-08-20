@@ -3,7 +3,7 @@ package Sorting;
 public class Selection {
 
     public static void selectionSort(int arr[]){
-        Boolean name = true;
+       
         for (int i =0;i<arr.length-1;i++){
             int minPos=i;
             for (int j=i+1;j <arr.length;j++){
