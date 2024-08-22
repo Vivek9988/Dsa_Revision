@@ -15,11 +15,17 @@ public class Bubble {
                     arr[j + 1] = temp;
                 }
                 
+                
             }
             if (val) {
                 System.out.println("aray is sorted");
+                 //return;
                 break;
+                //System.out.println("hello");
+                
+                
             }
+             System.out.println("hello");
         }
     }
     public static void printArr(int arr[]){
