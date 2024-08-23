@@ -5,7 +5,7 @@ import java.util.*;
 public class PrimeNo {
 
     public static boolean isprime(int n) {
-        for (int i = 2; i < Math.sqrt(n); i++) {
+        for (int i = 2; i <=Math.sqrt(n); i++) {
             if (n % i == 0) {
                 return false;
 
@@ -29,6 +29,7 @@ public class PrimeNo {
         Scanner sc = new Scanner(System.in);
        // int a = sc.nextInt();
        isPrimeNo(89);
+       //System.out.println(isprime(5));
 
     }
 
