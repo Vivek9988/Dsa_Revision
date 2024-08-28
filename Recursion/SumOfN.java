@@ -6,9 +6,10 @@ public class SumOfN {
         if (n == 0){
             return 0;
         }
-       int fnm1= sumN(n-1);
-       int sn = n +fnm1;
-       return sn;
+    //    int fnm1= sumN(n-1);
+    //    int sn = n +fnm1;
+    //    return sn;
+          return n+sumN(n-1);
 
     }
 

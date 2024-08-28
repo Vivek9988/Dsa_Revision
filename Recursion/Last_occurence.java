@@ -18,7 +18,7 @@ public class Last_occurence {
 
     }
     public static void main(String args[]){
-        int arr []= {8,3,6,8,5,3,2,3,5,6};
+        int arr []= {8,8,8};
         System.out.println(lastOcc(arr, 8, 0));
 
     }
