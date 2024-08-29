@@ -9,6 +9,7 @@ public class Selection {
             for (int j=i+1;j <arr.length;j++){
                 if(arr[minPos]>arr[j]){
                     minPos=j;
+                    System.out.println("hello");
                 }
             }
             int temp =arr[minPos];
@@ -22,8 +23,8 @@ public class Selection {
             System.out.print(arr[i] + " ");
         }
     }
-    public static void main (String args[]){
-        int arr[]={5,1,4,3,2};
+   public static void main (String args[]){
+        int arr[]={1,2,3,4};
 
         selectionSort(arr);
         printArr(arr);
