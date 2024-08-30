@@ -8,7 +8,7 @@ public class Basic {
         return ;
      }  
         System.out.print(n + " ");
-         printDec(n - 1);
+         printDec(n );
         //System.out.print(n +" ");
        
 
