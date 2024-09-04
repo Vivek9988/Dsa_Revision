@@ -2,12 +2,19 @@ package OOPS;
 
 public class Encaptulation {
     public static void main(String args[]) {
-        Pen p1= new Pen();
+        Pen p1 = new Pen();
         p1.setColor("green");
-        System.out.println(p1.color);
+        //System.out.println(p1.color);
         // p1.color="blue";
+        // p1.setColor("blue");
+        //System.out.println(p1.color);
+
+
+        // By geters and seters
         p1.setColor("blue");
-        System.out.println(p1.color);
+        System.out.println(p1.getColor());
+
+
 
     }
 
@@ -17,14 +24,22 @@ class Pen {
     String color;
     String tip;
 
-    void setColor(String newColor) {
-        color = newColor;
+    String getColor(){
+        return this.color;
+    }
+
+    String getTip(){
+        return this.tip;
+    }
+
+    void setColor(String color) {
+        this.color = color;
 
     }
 
-    void setTip(String newTip) {
+    void setTip(String tip) {
 
-        tip = newTip;
+        this.tip = tip;
     }
 }
 
