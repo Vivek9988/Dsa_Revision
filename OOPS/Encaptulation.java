@@ -13,6 +13,8 @@ public class Encaptulation {
         // By geters and seters
         p1.setColor("blue");
         System.out.println(p1.getColor());
+        p1.hello();
+        
 
 
 
@@ -23,6 +25,9 @@ public class Encaptulation {
 class Pen {
     String color;
     String tip;
+    void hello(){
+       System.out.println("hello");
+    }
 
     String getColor(){
         return this.color;
