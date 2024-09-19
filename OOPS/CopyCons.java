@@ -12,6 +12,7 @@ public class CopyCons {
         
 
         Student s2 = new Student(s1);
+        System.out.println(s2.roll);
         s2.password = "cdf";
         s1.marks[2]=5;                         //means it is call by reference ;
         System.out.println(s2.password);
@@ -27,15 +28,28 @@ class Student {
     String password;
     int marks[]=new int[3];
 
-    // Copy Constructor
+    // shallow copy constructor
+    // Student(Student s1) {
+    //     marks= new int[3];
+    //     this.roll = s1.roll;
+    //     this.name = s1.name;
+    //     this.password = s1.password;     
+    //     this.marks=s1.marks;
+         
+    // }
+
+    // deep copy constructor            changes not reflect
     Student(Student s1) {
-      //  marks= new int[3];
+        marks = new int[3];
         this.roll = s1.roll;
         this.name = s1.name;
-        this.password = s1.password;     //if we will not pass also the program will run
-        this.marks=s1.marks;
-         
+       for (int i =0; i<3;i++){
+        this.marks[i]=s1.marks[i];
+       }
+
     }
+    
+    
 
     // Default Constructor
     Student() {
